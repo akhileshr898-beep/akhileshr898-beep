@@ -3,7 +3,7 @@
 ![Intro](./assets/hero.svg?v=1)
 ![About](./assets/about-life.svg?v=1)
 ![Stack](./assets/stack.svg?v=1)
-![ID](./assets/id-dashboard.svg?v=202610251243)
+![ID](./assets/id-dashboard.svg?v=202610252021)
 ![Connect](./assets/connect.svg?v=2)
 
 **[LinkedIn](https://www.linkedin.com/in/akhilesh-rai-8a4a21217)** &nbsp;·&nbsp; **[GitHub](https://github.com/akhileshr898-beep)**
@@ -25,22 +25,22 @@
 <!--PROJECTS:START-->
 | Project | Description | Language | Stars | Forks | Updated |
 | --- | --- | --- | --- | --- | --- |
-| [**AutoCareAI**](https://github.com/akhileshr898-beep/AutoCareAI) | No description yet. | Python | 0 | 0 | 2026-10-25 |
+| [**AutoCareAI**](https://github.com/akhileshr898-beep/AutoCareAI) | No description yet. | Python | 1 | 0 | 2026-10-25 |
 | [**aimit**](https://github.com/akhileshr898-beep/aimit) | No description yet. | Shell | 0 | 0 | 2026-09-10 |
 | [**Rai123**](https://github.com/akhileshr898-beep/Rai123) | No description yet. | - | 0 | 0 | 2026-09-10 |
 | [**Rai**](https://github.com/akhileshr898-beep/Rai) | No description yet. | - | 0 | 0 | 2026-09-10 |
 | [**Rai2004**](https://github.com/akhileshr898-beep/Rai2004) | No description yet. | - | 0 | 0 | 2026-09-10 |
 | [**session123**](https://github.com/akhileshr898-beep/session123) | No description yet. | - | 0 | 0 | 2026-09-10 |
-| [**navinyaa-silks**](https://github.com/akhileshr898-beep/navinyaa-silks) | No description yet. | JavaScript | 0 | 0 | 2026-09-08 |
+| [**navinyaa-silks**](https://github.com/akhileshr898-beep/navinyaa-silks) | No description yet. | JavaScript | 1 | 0 | 2026-09-08 |
 | [**invyra-voice-ai**](https://github.com/akhileshr898-beep/invyra-voice-ai) · [Live](https://invyra-voice-ai.vercel.app) | No description yet. | TypeScript | 1 | 0 | 2026-09-07 |
-| [**portfolio**](https://github.com/akhileshr898-beep/portfolio) · [Live](https://portfolio-akhilesh13.vercel.app) | No description yet. | JavaScript | 0 | 0 | 2026-08-21 |
-| [**AI-Personality-Mirror**](https://github.com/akhileshr898-beep/AI-Personality-Mirror) | No description yet. | Python | 0 | 0 | 2026-07-26 |
-| [**AI-Technical-Interview-Lab**](https://github.com/akhileshr898-beep/AI-Technical-Interview-Lab) · [Live](https://ai-technical-interview-lab.vercel.app) | No description yet. | Python | 0 | 0 | 2026-07-26 |
-| [**GreenAI-Dashboard**](https://github.com/akhileshr898-beep/GreenAI-Dashboard) · [Live](https://green-ai-dashboard.vercel.app) | No description yet. | JavaScript | 0 | 0 | 2026-07-22 |
+| [**portfolio**](https://github.com/akhileshr898-beep/portfolio) · [Live](https://portfolio-akhilesh13.vercel.app) | No description yet. | JavaScript | 1 | 0 | 2026-08-21 |
+| [**AI-Personality-Mirror**](https://github.com/akhileshr898-beep/AI-Personality-Mirror) | No description yet. | Python | 1 | 0 | 2026-07-26 |
+| [**AI-Technical-Interview-Lab**](https://github.com/akhileshr898-beep/AI-Technical-Interview-Lab) · [Live](https://ai-technical-interview-lab.vercel.app) | No description yet. | Python | 1 | 0 | 2026-07-26 |
+| [**GreenAI-Dashboard**](https://github.com/akhileshr898-beep/GreenAI-Dashboard) · [Live](https://green-ai-dashboard.vercel.app) | No description yet. | JavaScript | 1 | 0 | 2026-07-22 |
 
 [See all 22 repositories](https://github.com/akhileshr898-beep?tab=repositories)
 <!--PROJECTS:END-->
 
 <!--STATS:START-->
-**22** public repos · **1** stars · **1** followers · top languages: Python, JavaScript, CSS, Shell
+**22** public repos · **9** stars · **1** followers · top languages: Python, JavaScript, CSS, Shell
 <!--STATS:END-->
