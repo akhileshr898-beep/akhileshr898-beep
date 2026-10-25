@@ -5,7 +5,7 @@ Runs inside GitHub Actions (see .github/workflows/update-profile.yml). Standard 
 It rewrites:
   * the projects table between <!--PROJECTS:START--> and <!--PROJECTS:END-->
   * the stats line between <!--STATS:START--> and <!--STATS:END-->
-  * the "Public repos" tile in assets/id-dashboard.svg
+  * the four live tiles (repos, stars, followers, top language) in assets/id-dashboard.svg
   * the ?v= cache-buster on id-dashboard.svg in the README, when anything changed
 """
 import datetime as dt
@@ -81,10 +81,16 @@ def replace_between(text, tag, new):
     return pat.sub(lambda m: m.group(1) + "\n" + new + "\n" + m.group(3), text)
 
 
-def patch_svg(svg, elem_id, value):
-    pat = re.compile(r'(<text[^>]*\bid="%s"[^>]*>)(.*?)(</text>)' % re.escape(elem_id), re.S)
-    value = value.replace("&", "&amp;").replace("<", "&lt;")
-    return pat.sub(lambda m: m.group(1) + value + m.group(3), svg)
+def patch_svg(svg, elem_id, value, max_size=62):
+    """Replace a tile's text and shrink the font so long values (e.g. 'JavaScript') still fit the 128px tile."""
+    size = max(14, min(max_size, int(128 / (0.62 * max(len(value), 1)))))
+    pat = re.compile(r'(<text[^>]*\bid="%s"[^>]*?)(\s*font-size="[^"]*")?([^>]*>)(.*?)(</text>)' % re.escape(elem_id), re.S)
+    safe = value.replace("&", "&amp;").replace("<", "&lt;")
+
+    def sub(m):
+        head = re.sub(r'\sfont-size="[^"]*"', "", m.group(1) + (m.group(3) or "").rsplit(">", 1)[0])
+        return '%s font-size="%d">%s</text>' % (head, size, safe)
+    return pat.sub(sub, svg)
 
 
 def main(user=None, repos=None):
@@ -108,8 +114,11 @@ def main(user=None, repos=None):
     readme = replace_between(readme, "STATS", build_stats(user, mine))
 
     top = Counter(r["language"] for r in mine if r.get("language")).most_common(1)
-    svg = patch_svg(svg, "i-stat-repos", "%02d" % len(mine))
-    svg = patch_svg(svg, "i-stat-sub", ("Top language: " + top[0][0]) if top else "Updated from GitHub")
+    stars = sum(r.get("stargazers_count", 0) for r in mine)
+    svg = patch_svg(svg, "i-stat-repos", str(len(mine)))
+    svg = patch_svg(svg, "i-stat-stars", str(stars))
+    svg = patch_svg(svg, "i-stat-followers", str(user.get("followers", 0)))
+    svg = patch_svg(svg, "i-stat-lang", top[0][0] if top else "n/a")
 
     if (readme, svg) == old:
         print("No changes.")
