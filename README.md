@@ -4,7 +4,7 @@
 ![About](./assets/about-life.svg?v=1)
 ![Stack](./assets/stack.svg?v=1)
 ![ID](./assets/id-dashboard.svg?v=1)
-![Connect](./assets/connect.svg?v=1)
+![Connect](./assets/connect.svg?v=2)
 
 **[LinkedIn](https://www.linkedin.com/in/akhilesh-rai-8a4a21217)** &nbsp;·&nbsp; **[GitHub](https://github.com/akhileshr898-beep)**
 
