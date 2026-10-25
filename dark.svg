@@ -1085,12 +1085,9 @@
 <text x="906.8" y="82" font-size="12" font-weight="700" fill="#EF4444" textLength="28.8" lengthAdjust="spacingAndGlyphs">LIVE</text>
 <line x1="500" y1="102" x2="1150" y2="102" stroke="#334155"/>
 <text x="500" y="128" class="cm" textLength="79.2" lengthAdjust="spacingAndGlyphs">// identity</text>
-<text x="500" y="151" class="lb" textLength="58.8" lengthAdjust="spacingAndGlyphs">Subject</text>
+<text x="500" y="151" class="lb" textLength="58.8" lengthAdjust="spacingAndGlyphs">Name</text>
 <text x="566.8" y="151" class="ld" textLength="470.4" lengthAdjust="spacingAndGlyphs">························································</text>
 <text x="1049.2" y="151" class="vl" textLength="100.8" lengthAdjust="spacingAndGlyphs">Akhilesh Rai</text>
-<text x="500" y="174" class="lb" textLength="33.6" lengthAdjust="spacingAndGlyphs">Role</text>
-<text x="541.6" y="174" class="ld" textLength="445.2" lengthAdjust="spacingAndGlyphs">·····················································</text>
-<text x="998.8" y="174" class="vl" textLength="151.2" lengthAdjust="spacingAndGlyphs">AI &amp; Web Developer</text>
 <text x="500" y="197" class="lb" textLength="50.4" lengthAdjust="spacingAndGlyphs">Origin</text>
 <text x="558.4" y="197" class="ld" textLength="445.2" lengthAdjust="spacingAndGlyphs">·····················································</text>
 <text x="1015.6" y="197" class="vl" textLength="134.4" lengthAdjust="spacingAndGlyphs">Mangaluru, India</text>
