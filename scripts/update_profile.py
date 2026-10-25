@@ -77,8 +77,20 @@ def build_stats(user, repos):
 def replace_between(text, tag, new):
     pat = re.compile(r"(<!--%s:START-->)(.*?)(<!--%s:END-->)" % (tag, tag), re.S)
     if not pat.search(text):
-        raise SystemExit("README.md is missing the <!--%s:START--> / <!--%s:END--> markers" % (tag, tag))
+        # markers missing (README was edited by hand): add the section at the end instead of failing
+        head = "\n\n## Projects\n\n" if tag == "PROJECTS" else "\n\n"
+        return text.rstrip() + head + "<!--%s:START-->\n%s\n<!--%s:END-->\n" % (tag, new, tag)
     return pat.sub(lambda m: m.group(1) + "\n" + new + "\n" + m.group(3), text)
+
+
+def find_files(name):
+    """Every copy of `name` in the repo (it may sit in assets/, asset/, or the top level)."""
+    found = []
+    for folder, dirs, files in os.walk(ROOT):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        if name in files:
+            found.append(os.path.join(folder, name))
+    return found
 
 
 def patch_svg(svg, elem_id, value, max_size=62):
@@ -104,10 +116,8 @@ def main(user=None, repos=None):
     mine.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
 
     readme_p = os.path.join(ROOT, "README.md")
-    svg_p = os.path.join(ROOT, "assets", "id-dashboard.svg")
-    readme = open(readme_p, encoding="utf-8").read()
-    svg = open(svg_p, encoding="utf-8").read()
-    old = (readme, svg)
+    readme = open(readme_p, encoding="utf-8").read() if os.path.exists(readme_p) else "# Hi, I'm %s\n" % USER
+    old_readme = readme
 
     table = build_table(mine) if mine else "_No public projects yet. New repositories appear here automatically._"
     readme = replace_between(readme, "PROJECTS", table)
@@ -115,19 +125,29 @@ def main(user=None, repos=None):
 
     top = Counter(r["language"] for r in mine if r.get("language")).most_common(1)
     stars = sum(r.get("stargazers_count", 0) for r in mine)
-    svg = patch_svg(svg, "i-stat-repos", str(len(mine)))
-    svg = patch_svg(svg, "i-stat-stars", str(stars))
-    svg = patch_svg(svg, "i-stat-followers", str(user.get("followers", 0)))
-    svg = patch_svg(svg, "i-stat-lang", top[0][0] if top else "n/a")
+    values = [("i-stat-repos", str(len(mine))), ("i-stat-stars", str(stars)),
+              ("i-stat-followers", str(user.get("followers", 0))), ("i-stat-lang", top[0][0] if top else "n/a")]
 
-    if (readme, svg) == old:
+    svg_paths = find_files("id-dashboard.svg")
+    if not svg_paths:
+        print("WARNING: id-dashboard.svg was not found anywhere in the repo; only the README was updated.")
+    changed_svgs = []
+    for path in svg_paths:
+        svg = old_svg = open(path, encoding="utf-8").read()
+        for elem_id, val in values:
+            svg = patch_svg(svg, elem_id, val)
+        if svg != old_svg:
+            open(path, "w", encoding="utf-8").write(svg)
+            changed_svgs.append(os.path.relpath(path, ROOT))
+
+    if not changed_svgs and readme == old_readme:
         print("No changes.")
         return 0
-    stamp = dt.date.today().strftime("%Y%m%d")
-    readme = re.sub(r"id-dashboard\.svg\?v=\w+", "id-dashboard.svg?v=" + stamp, readme)
+    if changed_svgs:  # new ?v= so GitHub fetches the fresh image instead of its cached copy
+        stamp = dt.datetime.utcnow().strftime("%Y%m%d%H%M")
+        readme = re.sub(r"id-dashboard\.svg\?v=\w+", "id-dashboard.svg?v=" + stamp, readme)
     open(readme_p, "w", encoding="utf-8").write(readme)
-    open(svg_p, "w", encoding="utf-8").write(svg)
-    print("Updated: %d projects, %s" % (len(mine), build_stats(user, mine)))
+    print("Updated %s: %d projects, %s" % (", ".join(changed_svgs) or "README only", len(mine), build_stats(user, mine)))
     return 0
 
 
