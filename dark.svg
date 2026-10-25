@@ -1089,50 +1089,47 @@
 <text x="566.8" y="151" class="ld" textLength="470.4" lengthAdjust="spacingAndGlyphs">························································</text>
 <text x="1049.2" y="151" class="vl" textLength="100.8" lengthAdjust="spacingAndGlyphs">Akhilesh Rai</text>
 <text x="500" y="174" class="lb" textLength="33.6" lengthAdjust="spacingAndGlyphs">Role</text>
-<text x="541.6" y="174" class="ld" textLength="403.2" lengthAdjust="spacingAndGlyphs">················································</text>
-<text x="956.8" y="174" class="vl" textLength="193.2" lengthAdjust="spacingAndGlyphs">AI &amp; Software Developer</text>
+<text x="541.6" y="174" class="ld" textLength="445.2" lengthAdjust="spacingAndGlyphs">·····················································</text>
+<text x="998.8" y="174" class="vl" textLength="151.2" lengthAdjust="spacingAndGlyphs">AI &amp; Web Developer</text>
 <text x="500" y="197" class="lb" textLength="50.4" lengthAdjust="spacingAndGlyphs">Origin</text>
 <text x="558.4" y="197" class="ld" textLength="445.2" lengthAdjust="spacingAndGlyphs">·····················································</text>
 <text x="1015.6" y="197" class="vl" textLength="134.4" lengthAdjust="spacingAndGlyphs">Mangaluru, India</text>
 <text x="500" y="220" class="lb" textLength="75.6" lengthAdjust="spacingAndGlyphs">Education</text>
 <text x="583.6" y="220" class="ld" textLength="327.6" lengthAdjust="spacingAndGlyphs">·······································</text>
-<text x="923.2" y="220" class="vl" textLength="226.8" lengthAdjust="spacingAndGlyphs">MCA, St. Aloysius (2024-26)</text>
+<text x="923.2" y="220" class="vl" textLength="226.8" lengthAdjust="spacingAndGlyphs">MCA, St. Aloysius (2025-27)</text>
 <text x="500" y="243" class="lb" textLength="50.4" lengthAdjust="spacingAndGlyphs">Status</text>
 <text x="558.4" y="243" class="ld" textLength="327.6" lengthAdjust="spacingAndGlyphs">·······································</text>
 <text x="898.0" y="243" class="vl" textLength="252.0" lengthAdjust="spacingAndGlyphs">Building + Learning + Shipping</text>
 <text x="500" y="266" class="lb" textLength="75.6" lengthAdjust="spacingAndGlyphs">ToolChain</text>
-<text x="583.6" y="266" class="ld" textLength="386.4" lengthAdjust="spacingAndGlyphs">··············································</text>
-<text x="982.0" y="266" class="vl" textLength="168.0" lengthAdjust="spacingAndGlyphs">VS Code, Git, GitHub</text>
+<text x="583.6" y="266" class="ld" textLength="210.0" lengthAdjust="spacingAndGlyphs">·························</text>
+<text x="805.6" y="266" class="vl" textLength="344.4" lengthAdjust="spacingAndGlyphs">Git/GitHub, Android Studio, Visual Studio</text>
 <text x="500" y="295" class="cm" textLength="57.6" lengthAdjust="spacingAndGlyphs">// stack</text>
 <text x="500" y="318" class="lb" textLength="75.6" lengthAdjust="spacingAndGlyphs">Core.Lang</text>
-<text x="583.6" y="318" class="ld" textLength="268.8" lengthAdjust="spacingAndGlyphs">································</text>
-<text x="864.4" y="318" class="vl" textLength="285.6" lengthAdjust="spacingAndGlyphs">Python, JavaScript, TypeScript, C#</text>
+<text x="583.6" y="318" class="ld" textLength="386.4" lengthAdjust="spacingAndGlyphs">··············································</text>
+<text x="982.0" y="318" class="vl" textLength="168.0" lengthAdjust="spacingAndGlyphs">Python, Java (basic)</text>
 <text x="500" y="341" class="lb" textLength="109.2" lengthAdjust="spacingAndGlyphs">Core.Frontend</text>
-<text x="617.2" y="341" class="ld" textLength="512.4" lengthAdjust="spacingAndGlyphs">·····························································</text>
-<text x="1141.6" y="341" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="617.2" y="341" class="ld" textLength="344.4" lengthAdjust="spacingAndGlyphs">·········································</text>
+<text x="973.6" y="341" class="vl" textLength="176.4" lengthAdjust="spacingAndGlyphs">HTML, CSS, JavaScript</text>
 <text x="500" y="364" class="lb" textLength="100.8" lengthAdjust="spacingAndGlyphs">Core.Backend</text>
-<text x="608.8" y="364" class="ld" textLength="520.8" lengthAdjust="spacingAndGlyphs">······························································</text>
-<text x="1141.6" y="364" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="608.8" y="364" class="ld" textLength="277.2" lengthAdjust="spacingAndGlyphs">·································</text>
+<text x="898.0" y="364" class="vl" textLength="252.0" lengthAdjust="spacingAndGlyphs">Python, Flask, Node.js (basic)</text>
 <text x="500" y="387" class="lb" textLength="109.2" lengthAdjust="spacingAndGlyphs">Core.Database</text>
-<text x="617.2" y="387" class="ld" textLength="512.4" lengthAdjust="spacingAndGlyphs">·····························································</text>
-<text x="1141.6" y="387" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="617.2" y="387" class="ld" textLength="403.2" lengthAdjust="spacingAndGlyphs">················································</text>
+<text x="1032.4" y="387" class="vl" textLength="117.6" lengthAdjust="spacingAndGlyphs">MySQL, MongoDB</text>
 <text x="500" y="410" class="lb" textLength="84.0" lengthAdjust="spacingAndGlyphs">Core.Infra</text>
-<text x="592.0" y="410" class="ld" textLength="537.6" lengthAdjust="spacingAndGlyphs">································································</text>
-<text x="1141.6" y="410" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="592.0" y="410" class="ld" textLength="495.6" lengthAdjust="spacingAndGlyphs">···························································</text>
+<text x="1099.6" y="410" class="vl" textLength="50.4" lengthAdjust="spacingAndGlyphs">Docker</text>
 <text x="500" y="439" class="cm" textLength="50.4" lengthAdjust="spacingAndGlyphs">// grid</text>
 <text x="500" y="462" class="lb" textLength="75.6" lengthAdjust="spacingAndGlyphs">Grid.Mail</text>
-<text x="583.6" y="462" class="ld" textLength="546.0" lengthAdjust="spacingAndGlyphs">·································································</text>
-<text x="1141.6" y="462" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="583.6" y="462" class="ld" textLength="310.8" lengthAdjust="spacingAndGlyphs">·····································</text>
+<text x="906.4" y="462" class="vl" textLength="243.6" lengthAdjust="spacingAndGlyphs">connect.akhileshrai@gmail.com</text>
 <text x="500" y="485" class="lb" textLength="117.6" lengthAdjust="spacingAndGlyphs">Grid.Portfolio</text>
 <text x="625.6" y="485" class="ld" textLength="420.0" lengthAdjust="spacingAndGlyphs">··················································</text>
 <text x="1057.6" y="485" class="vl" textLength="92.4" lengthAdjust="spacingAndGlyphs">coming soon</text>
 <text x="500" y="508" class="lb" textLength="109.2" lengthAdjust="spacingAndGlyphs">Grid.LinkedIn</text>
-<text x="617.2" y="508" class="ld" textLength="512.4" lengthAdjust="spacingAndGlyphs">·····························································</text>
-<text x="1141.6" y="508" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
+<text x="617.2" y="508" class="ld" textLength="310.8" lengthAdjust="spacingAndGlyphs">·····································</text>
+<text x="940.0" y="508" class="vl" textLength="210.0" lengthAdjust="spacingAndGlyphs">in/akhilesh-rai-8a4a21217</text>
 <text x="500" y="531" class="lb" textLength="92.4" lengthAdjust="spacingAndGlyphs">Grid.GitHub</text>
 <text x="600.4" y="531" class="ld" textLength="394.8" lengthAdjust="spacingAndGlyphs">···············································</text>
 <text x="1007.2" y="531" class="vl" textLength="142.8" lengthAdjust="spacingAndGlyphs">akhileshr898-beep</text>
-<text x="500" y="554" class="lb" textLength="109.2" lengthAdjust="spacingAndGlyphs">Grid.Facebook</text>
-<text x="617.2" y="554" class="ld" textLength="512.4" lengthAdjust="spacingAndGlyphs">·····························································</text>
-<text x="1141.6" y="554" class="vl" textLength="8.4" lengthAdjust="spacingAndGlyphs">-</text>
 </svg>
