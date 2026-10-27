@@ -25,7 +25,7 @@
 <!--PROJECTS:START-->
 | Project | Description | Language | Stars | Forks | Updated |
 | --- | --- | --- | --- | --- | --- |
-| [**DeviceSense-AI**](https://github.com/akhileshr898-beep/DeviceSense-AI) | No description yet. | JavaScript | 0 | 0 | 2026-10-26 |
+| [**DeviceSense-AI**](https://github.com/akhileshr898-beep/DeviceSense-AI) · [Live](https://frontend-xi-drab-18.vercel.app) | No description yet. | JavaScript | 0 | 0 | 2026-10-27 |
 | [**AutoCareAI**](https://github.com/akhileshr898-beep/AutoCareAI) | No description yet. | Python | 1 | 0 | 2026-10-25 |
 | [**aimit**](https://github.com/akhileshr898-beep/aimit) | No description yet. | Shell | 0 | 0 | 2026-09-10 |
 | [**Rai123**](https://github.com/akhileshr898-beep/Rai123) | No description yet. | - | 0 | 0 | 2026-09-10 |
